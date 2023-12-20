@@ -1,0 +1,15 @@
+name: Notify of Updates
+
+on:
+  push:
+    branches:
+      - main # Or the branch you want to monitor
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Notify on Push
+        run: |
+          echo "Cloudflare Pushed a docs update nig"
